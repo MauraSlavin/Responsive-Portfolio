@@ -1,0 +1,91 @@
+
+
+
+
+@media screen and (min-width:1200px) {
+
+  #main-container {
+    padding-top: 50px;
+  }
+
+  #myHeader {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  header {
+    max-width: 960px;
+  }
+
+}
+
+@media screen and (max-width:1200px) {
+
+  #main-container {
+    padding-top: 50px;
+  }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+  .main-section {
+    float: left;
+    padding: 2% 2% 30px 2%;
+  }
+
+  #main-container {
+    padding-top: 3%;
+  }
+
+  .main-section p:last-child {
+    margin-bottom: auto;
+  }
+} /* end of max width 768 */
+
+
+
+@media screen and (max-width:640px) {
+    
+  body {
+    margin: 0;
+    clear: both;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;      
+  }
+
+  h1 {
+    padding: 0 0 1% 0;
+  }
+
+  #main-container {
+    padding-top: 25%;
+  }
+
+  #myName {
+    width: 100%;
+  }
+    
+  nav {
+    float: none;
+    margin: 3%;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0 7px;
+    margin: 15px 0 0 0;
+    border: 0;
+  }
+
+  .main-section {
+    max-width: 95%;
+    margin: 10% auto 20%;
+    float: none;
+  }
+
+} /* end of max width 640 */

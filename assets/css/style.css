@@ -25,6 +25,10 @@ h1, h2, h3, p {
   margin-bottom: 20px;  /* default spacing after each header and paragraph */
 }
 
+/* p:last-child {
+  margin-bottom: 0;  /* no extra space after last paragraph 
+}
+*/
 
 h1, h2, h3 {
   /* default text attributes for headers */
@@ -127,26 +131,13 @@ h3, h2 {
   min-height: calc(100vh - 70px);
 }
 
-#main-container-portfolio {
-  padding-top: 130px;
-  min-height: calc(100vh - 70px);
-}
-
-.main-section #main-section-portfolio {
+.main-section {
   width: 100%;
   max-width: 960px;
   padding: 30px;
   margin: 0 0 70px;
   background: #ffffff;
   border: 1px solid #dddddd;
-}
-
-#main-section-portfolio {
-  float: left;
-}
-
-.main-section ul {
-  list-style-type: none;
 }
 
 /* portfolio page */
@@ -158,15 +149,6 @@ h3, h2 {
   margin: 20px 0 25px;
   overflow: auto;
 }
-
-#worksOfArt {
-  background-color: white;
-  height: auto;
-  margin: auto;
-
-
-}
-
 
 .work:nth-child(even) {
   margin-right: 40px;
@@ -201,10 +183,6 @@ h3, h2 {
 }
 
 /* contact page */
-
-#leftJustify {
-  padding-left: 0;
-}
 
 #contact-form ul {
   margin-bottom: 20px;
@@ -292,23 +270,6 @@ input[type=submit] {
   .main-section p:last-child {
     margin-bottom: auto;
   }
-
-  .work {
-    margin: 0 10px 30px;
-  }
-
-  .work:nth-child(even) {
-    margin-right: 10px;
-  }
-
-  .work:last-child {
-    margin-bottom: 70px;
-  }
-
-  #worksOfArt {
-    margin-top: 130px;
-  }
-
 } /* end of max width 768 */
 
 
@@ -329,21 +290,8 @@ input[type=submit] {
     padding: 0 0 1% 0;
   }
 
-  .main-container {
+  #main-container {
     padding-top: 25%;
-  }
-  
-  #main-container-portfolio {
-    height: 2000px;
-    background-color: white;
-    width: 90%;
-  }
-
-  #worksOfArt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 130px;
   }
 
   #myName {
@@ -366,20 +314,6 @@ input[type=submit] {
     max-width: 95%;
     margin: 10% auto 20%;
     float: none;
-  }
-
-  .main-section-portfolio {
-    max-width: 95%;
-    margin: 10% auto 20%;
-    float: none;
-  }
-
-  .work {
-    margin-top: 50px;
-  }
-  
-  .work:nth-child(even) {
-    margin: auto;
   }
 
 } /* end of max width 640 */
