@@ -25,10 +25,6 @@ h1, h2, h3, p {
   margin-bottom: 20px;  /* default spacing after each header and paragraph */
 }
 
-/* p:last-child {
-  margin-bottom: 0;  /* no extra space after last paragraph 
-}
-*/
 
 h1, h2, h3 {
   /* default text attributes for headers */
@@ -131,7 +127,12 @@ h3, h2 {
   min-height: calc(100vh - 70px);
 }
 
-.main-section {
+#main-container-portfolio {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-section #main-section-portfolio {
   width: 100%;
   max-width: 960px;
   padding: 30px;
@@ -153,6 +154,15 @@ h3, h2 {
   margin: 20px 0 25px;
   overflow: auto;
 }
+
+#worksOfArt {
+  background-color: white;
+  height: auto;
+  margin: auto;
+
+
+}
+
 
 .work:nth-child(even) {
   margin-right: 40px;
@@ -298,8 +308,21 @@ input[type=submit] {
     padding: 0 0 1% 0;
   }
 
-  #main-container {
+  .main-container {
     padding-top: 25%;
+  }
+  
+  #main-container-portfolio {
+    height: 2000px;
+    background-color: white;
+    width: 90%;
+  }
+
+  #worksOfArt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
   }
 
   #myName {
@@ -323,5 +346,19 @@ input[type=submit] {
     margin: 10% auto 20%;
     float: none;
   }
+
+  .main-section-portfolio {
+    max-width: 95%;
+    margin: 10% auto 20%;
+    float: none;
+  }
+
+  .work {
+    margin-top: 50px;
+  }
+  
+.work:nth-child(even) {
+  margin: auto;
+}
 
 } /* end of max width 640 */
