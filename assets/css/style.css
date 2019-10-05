@@ -140,6 +140,10 @@ h3, h2 {
   border: 1px solid #dddddd;
 }
 
+.main-section ul {
+  list-style-type: none;
+}
+
 /* portfolio page */
 
 .work {
@@ -183,6 +187,10 @@ h3, h2 {
 }
 
 /* contact page */
+
+#leftJustify {
+  padding-left: 0;
+}
 
 #contact-form ul {
   margin-bottom: 20px;
