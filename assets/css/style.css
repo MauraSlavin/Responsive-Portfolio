@@ -53,7 +53,7 @@ h3 {
 
 /* header */
 
-#myHeader {
+.myHeader {
     z-index: 99;
     width: 100%;
     max-width: 960px;
@@ -126,54 +126,17 @@ h3, h2 {
 
 /* main */
 
-#main-container {
-  padding-top: 130px;
-  min-height: calc(100vh - 70px);
-}
 
 .main-section {
   width: 100%;
   max-width: 960px;
   padding: 30px;
-  margin: 0 0 70px;
+  margin: 20px 0 70px;
   background: #ffffff;
   border: 1px solid #dddddd;
 }
 
-/* portfolio page */
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
-
+/* about me page */
 .auth-image {
   float: left;
   width: 200px;
@@ -235,10 +198,6 @@ input[type=submit] {
 
 @media screen and (min-width:1200px) {
 
-  #main-container {
-    padding-top: 50px;
-  }
-
   #myHeader {
     max-width: 960px;
     margin: auto;
@@ -252,9 +211,6 @@ input[type=submit] {
 
 @media screen and (max-width:1200px) {
 
-  #main-container {
-    padding-top: 50px;
-  }
 
 }
 
@@ -264,10 +220,6 @@ input[type=submit] {
   .main-section {
     float: left;
     padding: 2% 2% 30px 2%;
-  }
-
-  #main-container {
-    padding-top: 3%;
   }
 
   .main-section p:last-child {
@@ -293,10 +245,6 @@ input[type=submit] {
     padding: 0 0 1% 0;
   }
 
-  #main-container {
-    padding-top: 25%;
-  }
-
   #myName {
     width: 100%;
   }
@@ -315,7 +263,7 @@ input[type=submit] {
 
   .main-section {
     max-width: 95%;
-    margin: 10% auto 20%;
+    margin: 180px auto 20%;
     float: none;
   }
 
