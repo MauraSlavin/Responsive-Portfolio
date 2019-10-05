@@ -25,9 +25,10 @@ h1, h2, h3, p {
   margin-bottom: 20px;  /* default spacing after each header and paragraph */
 }
 
-p:last-child {
-  margin-bottom: 0;  /* no extra space after last paragraph */
+/* p:last-child {
+  margin-bottom: 0;  /* no extra space after last paragraph 
 }
+*/
 
 h1, h2, h3 {
   /* default text attributes for headers */
@@ -65,7 +66,7 @@ h3 {
 
 #myName {
   float: left;
-  width: 400px;
+  width: 320px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -79,6 +80,7 @@ h3 {
 
 nav {
   margin-top: 25px;
+  float: right;
 }
 
 nav a {
@@ -108,7 +110,7 @@ footer {
   text-align: center;
   background: #666666;
   border-top: 3px solid #4aaaa5;
-  height: 2%;
+  height: 1%;
   position: fixed;
   bottom: 0;  
 }
@@ -218,10 +220,49 @@ input[type=submit] {
   border: 0 none;
 }
 
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+
+@media screen and (max-width: 1200) {
+
+
+}
+
+
+@media screen and (max-width:980) {
+
+
+
+}
+
+
+@media screen and (max-width:768px) {
+
+  .main-section {
+    float: left;
+    padding: 2% 2% 30px 2%;
+  }
+
+  #main-container {
+    padding-top: 3%;
+  }
+
+  .main-section p:last-child {
+    margin-bottom: auto;
+  }
+} /* end of max width 768 */
+
+
+
 @media screen and (max-width:640px) {
     
   body {
     margin: 0;
+    clear: both;
   }
   
   header {
@@ -229,11 +270,20 @@ input[type=submit] {
     top: 0;      
   }
 
+  h1 {
+    padding: 0 0 1% 0;
+  }
+
+  #main-container {
+    padding-top: 25%;
+  }
+
   #myName {
     width: 100%;
   }
     
   nav {
+    float: none;
     margin: 3%;
     text-align: center;
   }
@@ -247,19 +297,7 @@ input[type=submit] {
   .main-section {
     max-width: 95%;
     margin: 10% auto;
+    float: none;
   }
 
-
-
-  
 } /* end of max width 640 */
-
-  @media sreen and (max-width:768px) {
-    nav {
-      float: right;
-    }
-
-    .main-section {
-      float: left;
-    }
-  } /* end of max width 768 */
