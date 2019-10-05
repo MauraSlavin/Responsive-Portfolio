@@ -138,9 +138,11 @@ footer {
   overflow: auto;
 }
 
+/*
 .work:nth-child(even) {
   margin-right: 40px;
 }
+*/
 
 .work img {
   width: 100%;
@@ -261,10 +263,17 @@ footer {
     margin: 180px auto 20%;
     float: none;
     background-color: white;  /* added */
-    height: 1700px;        /* added */
+    height: 1600px;        /* added */
+  }
+
+  .icons {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .work {
+    margin: auto;
+    margin-bottom: 25px;
   }
 
 } /* end of max width 640 */
