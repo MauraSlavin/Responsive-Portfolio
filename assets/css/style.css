@@ -66,7 +66,7 @@ h3 {
 
 #myName {
   float: left;
-  width: 370px;
+  width: 400px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -216,3 +216,9 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media screen and (min-width:640px) {
+  header {
+    position: fixed;
+    top: 0;      
+  }
