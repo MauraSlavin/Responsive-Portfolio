@@ -41,7 +41,7 @@ h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  /* ligth border after primary header */
+  /* light border after primary header */
   border-bottom: 3px solid #dddddd;
 }
 
@@ -79,7 +79,6 @@ h3 {
 }
 
 nav {
-  float: right;
   margin-top: 25px;
 }
 
@@ -217,8 +216,31 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (min-width:640px) {
+@media screen and (max-width:640px) {
   header {
     position: fixed;
     top: 0;      
   }
+
+  #myName {
+    width: 100%;
+  }
+    
+  nav {
+    margin: 3%;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0 7px;
+    margin: 15px 0 0 0;
+    border: 0;
+  }
+} /* end of max width 640 */
+
+  @media sreen and (max-width:768px) {
+    nav {
+      float: right;
+    }
+
+  } /* end of max width 768 */
