@@ -180,12 +180,15 @@ h3, h2 {
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
+  list-style-position: inside;
 }
 
 /* contact page */
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style-type: none;
+  margin-left: -40px;
 }
 
 #contact-form li {
@@ -314,6 +317,11 @@ input[type=submit] {
     max-width: 95%;
     margin: 10% auto 20%;
     float: none;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
 } /* end of max width 640 */

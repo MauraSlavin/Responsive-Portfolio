@@ -4,7 +4,7 @@
 
 @media screen and (min-width:1200px) {
 
-  #main-container {
+  #main-container-portfolio {
     padding-top: 50px;
   }
 
@@ -21,7 +21,7 @@
 
 @media screen and (max-width:1200px) {
 
-  #main-container {
+  #main-container-portfolio {
     padding-top: 50px;
   }
 
@@ -35,7 +35,7 @@
     padding: 2% 2% 30px 2%;
   }
 
-  #main-container {
+  #main-container-portfolio {
     padding-top: 3%;
   }
 
@@ -62,7 +62,7 @@
     padding: 0 0 1% 0;
   }
 
-  #main-container {
+  #main-container-portfolio {
     padding-top: 25%;
   }
 
