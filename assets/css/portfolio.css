@@ -213,6 +213,13 @@ footer {
   .main-section p:last-child {
     margin-bottom: auto;
   }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
 } /* end of max width 768 */
 
 
