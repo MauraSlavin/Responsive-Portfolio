@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maura Slavin's Portfolio</title>
-  <!--  link my portfolio stylesheet -->
+  <!-- avoid overwriting css that works for other pages, so portfolio has it's own stylesheet. -->
   <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
-  <!-- avoid overwriting css that works for other pages. -->
+
 </head>
 
 <body>
   <!-- header (same for all pages) - my name and nav bar -->
   <header class="myHeader">
     <div class="container clearfix">
-      <a href="index.html" id="myName">Maura M. Slavin</a>
+      <a href="index.html" class="myName">Maura M. Slavin</a>
       <nav>
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -23,12 +23,12 @@
     </div>
   </header>
 
-  <!-- this page has links to 5 projects; wrapping as needed -->
+  <!-- this page has links to 5 projects; wrapping as needed using display flex-->
   <div class="container">
     <section class="main-section">
       <h1>Portfolio</h1>
 
-      <div class="icons">
+      <div class="icons">     <!-- Need this div for wrapping -->
         <!-- project 1 -->
         <div class="work">
           <img src="assets/images/platypus-image.png" alt="Platypus">
@@ -64,10 +64,10 @@
 
           <h3>An Amazing Creature</h3>
         </div>
-      </div>
-    </section>
+      </div>     <!-- of icons div. -->
+    </section>   <!-- of main section -->
 
-  </div>
+  </div>  <!-- of container -->
 
   <!-- same footer -->
   <footer>

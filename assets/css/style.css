@@ -4,6 +4,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #777777;
+  /* header right at top of page */
   margin-top: 0;
   background: url("../images/aqua_marble_seamless.jpg");  /* background for the whole page */
 }
@@ -21,16 +22,12 @@ body {
   clear: both;   /* clear any extraneous floats */
 }
 
-h1, h2, h3, p {
+h1, h2, p {
   margin-bottom: 20px;  /* default spacing after each header and paragraph */
 }
 
-/* p:last-child {
-  margin-bottom: 0;  /* no extra space after last paragraph 
-}
-*/
 
-h1, h2, h3 {
+h1, h2 {
   /* default text attributes for headers */
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
@@ -46,32 +43,32 @@ h1 {
   border-bottom: 3px solid #dddddd;
 }
 
-h2,
-h3 {
+/* font sizes for secondary headers */
+h2 {
   font-size: 22px;
 }
 
 /* header */
 
 .myHeader {
-    z-index: 99;
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
-    overflow: auto;
+    z-index: 99;   /* make sure it gets displayed on top of anything else */
+    width: 100%;   /* full page */
+    max-width: 960px;  /* max size for content width; rest of page gets background image */
+    margin: auto;   /* to center */
+    overflow: auto;  
     color: #ffffff;
     background: #ffffff;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;  /* draws a line under the header */
  }
 
 
-#myName {
-  float: left;
+.myName {
+  float: left;  /* left justified */
   width: 320px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 700;  /* bold */
   line-height: 90px;
   color: #ffffff;
   text-align: center;
@@ -81,22 +78,22 @@ h3 {
 
 nav {
   margin-top: 25px;
-  float: right;
+  float: right;     /* stack nav items on the right */
   padding-right: 10px;
 }
 
 nav a {
-  display: inline-block;
+  display: inline-block;  /* in the same line */
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
   color: #999;
-  text-decoration: none;
-  border-left: 1px solid darkgrey;
+  text-decoration: none;  /* no underline for the links */
+  border-left: 1px solid darkgrey;  /* for vertical bar between links */
 }
 
 nav a:first-child {
-  border-left: 0 none;
+  border-left: 0 none;  /* special formatting for the first link */
 }
 
 /* footer */
@@ -112,16 +109,16 @@ footer {
   background: #666666;
   border-top: 3px solid #4aaaa5;
   height: 4px;
-  position: fixed;
-  bottom: 0; 
-  left: 0; 
+  position: fixed;  /* these lines give it a sticky footer */
+  bottom: 0;        /* these lines give it a sticky footer */
+  left: 0;          /* these lines give it a sticky footer */
 }
 
-h3, h2 {
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;   /* shorter line under secondary headers */
 }
 
 /* main */
@@ -138,26 +135,27 @@ h3, h2 {
 
 /* about me page */
 .auth-image {
-  float: left;
+  float: left;   /* to get the text to wrap around the picture */
   width: 200px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
-  list-style-position: inside;
+  list-style-position: inside;   /* so text doesn't wrap under preceding bullet */
 }
 
 /* contact page */
 
 #contact-form ul {
   margin-bottom: 20px;
-  list-style-type: none;
-  margin-left: -40px;
+  list-style-type: none;  /* no bullets for the items to enter */
+  margin-left: -40px;    /* line up with visual page margin on screen */
 }
 
 #contact-form li {
   margin-bottom: 10px;
 }
 
+/* format input boxes and text displayed in them */
 label,
 input[type=text],
 input[type=email],
@@ -195,11 +193,12 @@ input[type=submit] {
 }
 
 
+/* format for super large screens */
 
 @media screen and (min-width:1200px) {
 
   #myHeader {
-    max-width: 960px;
+    max-width: 960px;  /* will have larger side margins */
     margin: auto;
   }
 
@@ -209,11 +208,9 @@ input[type=submit] {
 
 }
 
-@media screen and (max-width:1200px) {
+/* desktop screens didn't need special formatting */
 
-
-}
-
+/* format for tablets screens */
 
 @media screen and (max-width:768px) {
 
@@ -222,13 +219,13 @@ input[type=submit] {
     padding: 2% 2% 30px 2%;
   }
 
-  .main-section p:last-child {
+  .main-section p:last-child {  /* different bottom margin for last paragraph */
     margin-bottom: auto;
   }
 } /* end of max width 768 */
 
 
-
+/* formatting for phones */
 @media screen and (max-width:640px) {
     
   body {
@@ -236,7 +233,7 @@ input[type=submit] {
     clear: both;
   }
   
-  header {
+  header {     /* sticky header for phones */
     position: fixed;
     top: 0;      
   }
@@ -245,11 +242,11 @@ input[type=submit] {
     padding: 0 0 1% 0;
   }
 
-  #myName {
+  .myName {    /* name fills width of screen */
     width: 100%;
   }
     
-  nav {
+  nav {  /* nav items under name, centered, rather than to the right */
     float: none;
     margin: 3%;
     text-align: center;
@@ -263,11 +260,11 @@ input[type=submit] {
 
   .main-section {
     max-width: 95%;
-    margin: 180px auto 20%;
+    margin: 180px auto 20%;  /* this allows the secondary heading to show under the sticky header */
     float: none;
   }
 
-  .auth-image {
+  .auth-image {   /* picture fills width of screen, paragraph follows, rather than wrapping around */
     width: 100%;
     margin-bottom: 20px;
   }
